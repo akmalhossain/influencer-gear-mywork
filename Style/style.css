@@ -124,6 +124,16 @@
   .display-flex{
     display: flex;
   }
+
+  .btn-primary{
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    border-radius: 42px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 32px;
+  }
   /* navigation related style  */
   .brand-name{
     font-weight: bolder;
@@ -152,11 +162,32 @@
  }
 
  /* hero related style  */
- .image-container{
-    background-image: url(../images/Circle\ design.svg);
-    justify-items: center;
+ .hero-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
  }
- 
+ .image-container{
+   
+ }
+ .image-container{
+    width: 475px;
+    height: 475px;
+    background-image: url(../images/Circle\ design.svg);
+    background-size: cover;
+
+ }
+ .hero-title{
+    font-size: 52px;
+    color: var(--secondary-color);
+ }
+.hero-description{
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-top: 16px;
+}
  /* mobile responsive */
  @media screen and (max-width:576px){
     .header-navigation{
