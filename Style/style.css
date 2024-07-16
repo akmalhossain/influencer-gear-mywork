@@ -132,14 +132,47 @@
   }
   .header-navigation{
     justify-content: space-between;
-    margin: 87px 120px 0 120px;
+    align-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 120px 0 120px;
   }
  .header-navigation li{
     list-style: none;
-    max-width: 1440px;
+    
     margin-left: 34px;
  }
  .header-navigation a{
     text-decoration: none;
+    color: var(--secondary-color);
+ }
+ .navigation-items{
+    justify-content: center;
+    align-content: center;
+ }
+
+ /* hero related style  */
+ .image-container{
+    background-image: url(../images/Circle\ design.svg);
+    justify-items: center;
  }
  
+ /* mobile responsive */
+ @media screen and (max-width:576px){
+    .header-navigation{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        padding: 25px 25px 0 25px;
+      }
+      .header-navigation li{
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 24px;
+     }
+
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+        
+    }
